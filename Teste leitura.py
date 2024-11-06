@@ -11,7 +11,7 @@ while i >= 2017:
     for arqsep in arquivos:
         print(arqsep)
         diretorio = (f'Dados Leichmaniose/Mortalidade/BA/{i}/{arqsep}')
-        df = pd.read_csv(diretorio, sep=';', encoding='ISO-8859-1', header=0, skiprows=4, skipfooter=14, engine='python')
+        df = pd.read_csv(diretorio, sep=';', encoding='ISO-8859-1', header=0, skiprows=3, skipfooter=14, engine='python')
         print(df.head())
     print(f'-------------------final---------------------{i}\n')
     i = i - 1
