@@ -17,7 +17,7 @@ class LeitorCSV:
             writer (_type_): _description_
         """
         nome_aba = arquivo[:31]  # Limitar o nome da aba para 31 caracteres
-        dataframe.to_excel(writer, sheet_name=nome_aba, index=True)
+        dataframe.to_excel(writer, sheet_name=nome_aba, index=True )
 
     def _processar_arquivo(self, ano, arquivo, writer):
         """ Cria um DataFrame baseado no arquivo.csv.
